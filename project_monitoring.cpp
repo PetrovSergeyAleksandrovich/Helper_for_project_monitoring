@@ -60,6 +60,7 @@ int main()
         std::ofstream file_write(file_location, std::ios::app);
         file_write << std::endl << text_to_add;
         file_write.close();
+
         //Read file contains
         std::cout << std::endl << std::endl << "=====PROJECTS_LIST_NEW=====" << std::endl;
         file_read.open(file_location, std::ios::binary);
