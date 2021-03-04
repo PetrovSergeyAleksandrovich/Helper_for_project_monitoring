@@ -73,7 +73,7 @@ int main()
         file_read.close();
         std::cout << std::endl << std::endl << std::endl;
         SetConsoleOutputCP(1251);
-        std::cout << "Информация успешно добавлена в файл\Information successfully added to file" << std::endl << std::endl;
+        std::cout << "Информация успешно добавлена в файл\nInformation successfully added to file" << std::endl << std::endl;
     }
     else
     {
