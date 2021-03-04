@@ -26,14 +26,14 @@ int main()
     file_read.close();
 
     //User input new project info
-    std::cout << std::endl << "\nВведите текст: ";
+    std::cout << std::endl << "\nВведите текст / Input text: ";
     SetConsoleCP(1251);
     std::getline(std::cin, text_to_add);
     SetConsoleOutputCP(1251);
-    std::cout << "\nТекст для добавления: " << text_to_add << std::endl;
+    std::cout << "\nТекст для добавления / Your text to add: " << text_to_add << std::endl;
 
     //Check and confirm input from user
-    std::cout << "\nНажмите 1 подтвердить. 0 для повторного ввода: ";
+    std::cout << "\nНажмите 1 подтвердить. 0 для повторного ввода\nPress 1 to confirm. Press 0 to repeat input: ";
     std::getline(std::cin, command);
     while (command != "1")
     {
@@ -42,13 +42,13 @@ int main()
         text_to_add.clear();
         if (text_to_add.empty())
         {
-            std::cout << "\nВведите текст снова: ";
+            std::cout << "\nВведите текст снова / Input text again: ";
             SetConsoleCP(1251);
             std::getline(std::cin, text_to_add);
-            std::cout << "\nТекст для добавления: " << text_to_add << std::endl;
+            std::cout << "\nТекст для добавления / Text to add: " << text_to_add << std::endl;
         }
 
-        std::cout << "\nНажмите 1 подтвердить. 0 для повторного ввода: ";
+        std::cout << "\nНажмите 1 подтвердить. 0 для повторного ввода\nPress 1 to confirm. Press 0 to repeat input: ";
         std::getline(std::cin, command);
         if (command == "1") break;
 
@@ -73,11 +73,11 @@ int main()
         file_read.close();
         std::cout << std::endl << std::endl << std::endl;
         SetConsoleOutputCP(1251);
-        std::cout << "Информация успешно добавлена в файл" << std::endl << std::endl;
+        std::cout << "Информация успешно добавлена в файл\Information successfully added to file" << std::endl << std::endl;
     }
     else
     {
-        std::cout << "\n\n===Пустая запись===\n\n";
+        std::cout << "\n\n===Пустая запись/Empty record===\n\n";
     }
 
     return 0;
